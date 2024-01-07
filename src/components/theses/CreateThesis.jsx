@@ -177,6 +177,7 @@ function CreateThesis() {
                         onChange={handleChange}
                         className={"bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"}
                         placeholder={"Enter your name"}
+                        autoComplete={"off"}
                     />
                     {validationErrors.authorName && (
                         <span className={"text-red-500"}>{validationErrors.authorName}</span>
@@ -192,6 +193,7 @@ function CreateThesis() {
                         onChange={handleChange}
                         className={"bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"}
                         placeholder={"Enter your lastname"}
+                        autoComplete={"off"}
                     />
                     {validationErrors.authorLastname && (
                         <span className={"text-red-500"}>{validationErrors.authorLastname}</span>
@@ -207,6 +209,7 @@ function CreateThesis() {
                         value={formData.thesis_title}
                         onChange={handleChange}
                         placeholder={"Enter Title"}
+                        autoComplete={"off"}
                     />
                 </div>
 
@@ -240,6 +243,7 @@ function CreateThesis() {
                         onChange={handleChange}
                         className={"bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"}
                         placeholder={"Write here about your thesis"}
+                        autoComplete={"off"}
                     />
                 </div>
 
@@ -273,6 +277,7 @@ function CreateThesis() {
                         value={formData.instituteName}
                         onChange={handleChange}
                         disabled={!formData.universityName}
+                        autoComplete={"off"}
                     >
                         <option value="" disabled>
                             Select Institute
@@ -319,6 +324,7 @@ function CreateThesis() {
                         value={formData.numberOfPages || ""}
                         onChange={handleChange}
                         placeholder={"Enter number of pages"}
+                        autoComplete={"off"}
                     />
                     {validationErrors.numberOfPages && (
                         <span className={"text-red-500"}>{validationErrors.numberOfPages}</span>
@@ -335,6 +341,8 @@ function CreateThesis() {
                         onChange={handleChange}
                         className={"bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"}
                         placeholder={"Enter your co-supervisor's name"}
+                        autoComplete={"off"}
+
                     />
                     {validationErrors.coSupervisorName && (
                         <span className={"text-red-500"}>{validationErrors.coSupervisorName}</span>
@@ -350,6 +358,7 @@ function CreateThesis() {
                         onChange={handleChange}
                         className={"bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"}
                         placeholder={"Enter your co-supervisor's last name"}
+                        autoComplete={"off"}
                     />
                     {validationErrors.coSupervisorLastname && (
                         <span className={"text-red-500"}>{validationErrors.coSupervisorLastname}</span>
@@ -365,6 +374,7 @@ function CreateThesis() {
                         onChange={handleChange}
                         className={"bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"}
                         placeholder={"YYYY-MM-DD"}
+
                     />
                 </div>
 

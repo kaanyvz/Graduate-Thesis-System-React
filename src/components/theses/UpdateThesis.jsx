@@ -199,6 +199,7 @@ function UpdateThesis(props) {
                         name={"thesis_title"}
                         value={updateFormData.thesis_title}
                         onChange={handleChange}
+                        autoComplete={"off"}
                         placeholder={"Enter Title"}
                     />
                 </div>
@@ -231,6 +232,7 @@ function UpdateThesis(props) {
                         onChange={handleChange}
                         className={"bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"}
                         placeholder={"Write here about your thesis"}
+                        autoComplete={"off"}
                     />
                 </div>
 
@@ -303,6 +305,7 @@ function UpdateThesis(props) {
                         value={updateFormData.numberOfPages || ""}
                         onChange={handleChange}
                         placeholder={"Enter number of pages"}
+                        autoComplete={"off"}
                     />
 
                 </div>
@@ -318,6 +321,7 @@ function UpdateThesis(props) {
                         onChange={handleChange}
                         className={"bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"}
                         placeholder={"Enter your co-supervisor's name"}
+                        autoComplete={"off"}
                     />
 
                 </div>
@@ -331,6 +335,7 @@ function UpdateThesis(props) {
                         onChange={handleChange}
                         className={"bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"}
                         placeholder={"Enter your co-supervisor's last name"}
+                        autoComplete={"off"}
                     />
 
                 </div>

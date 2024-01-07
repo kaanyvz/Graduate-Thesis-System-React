@@ -49,7 +49,7 @@ const RegisterPage = () => {
                 console.error("failed during registration");
                 return;
             }
-            notify('Your account has created successfully!\nYou will be redirected to the login page in 3000 seconds.', 'success');
+            notify('Your account has created successfully!\nYou will be redirected to the login page in 3 seconds.', 'success');
             setTimeout(() => {
                 navigate('/login');
             }, 3000);
@@ -80,6 +80,7 @@ const RegisterPage = () => {
                                        onChange={handleChange}
                                        className={"bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"}
                                        placeholder={"Enter your first name"}
+                                       autoComplete={"none"}
                                        required
                                 />
                             </div>
@@ -95,6 +96,7 @@ const RegisterPage = () => {
                                        onChange={handleChange}
                                        className={"bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"}
                                        placeholder={"Enter your last name"}
+                                       autoComplete={"none"}
                                        required
                                 />
                             </div>
@@ -110,6 +112,7 @@ const RegisterPage = () => {
                                        onChange={handleChange}
                                        className={"bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"}
                                        placeholder={"Enter your mail address."}
+                                       autoComplete={"none"}
                                        required
                                 />
                             </div>

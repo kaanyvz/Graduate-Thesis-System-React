@@ -14,6 +14,7 @@ const ThesisSearchPage = () => {
         university: '',
         author: '',
         institute: '',
+        keywords: ""
     });
 
     const [universities, setUniversities] = useState([])
@@ -100,13 +101,26 @@ const ThesisSearchPage = () => {
         <form>
             <div className={"grid gap-6 mb-6 md:grid-cols-2"}>
                 <div>
+                    <label className={"block mb-2 text-sm font-medium text-gray-900 dark:text-white"}>Keywords:</label>
+                    <input className={"bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"}
+                           type="text"
+                           name="keywords"
+                           value={searchParams.keywords}
+                           onChange={handleInputChange}
+                           placeholder={"Enter some word to search"}
+                           autoComplete={"off"}
+                    />
+                </div>
+                <div>
                     <label className={"block mb-2 text-sm font-medium text-gray-900 dark:text-white"}>Title:</label>
                     <input className={"bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"}
                            type="text"
                            name="title"
                            value={searchParams.title}
                            onChange={handleInputChange}
-                           placeholder={"Title"}/>
+                           placeholder={"Title"}
+                           autoComplete={"off"}
+                    />
                 </div>
                 <div>
                     <label className={"block mb-2 text-sm font-medium text-gray-900 dark:text-white"}>Year:</label>
@@ -116,6 +130,8 @@ const ThesisSearchPage = () => {
                            value={searchParams.year}
                            onChange={handleInputChange}
                            placeholder={"YYYY-MM-DD"}
+                           autoComplete={"off"}
+
                     />
                 </div>
                 <div>
@@ -125,7 +141,9 @@ const ThesisSearchPage = () => {
                            name="type"
                            value={searchParams.type}
                            onChange={handleInputChange}
-                           placeholder={"Type"}/>
+                           placeholder={"Type"}
+                           autoComplete={"off"}
+                    />
                 </div>
                 <div className={"mb-5"}>
                     <label className={"block mb-2 text-sm font-medium text-gray-900 dark:text-white"}>Language: </label>
@@ -134,6 +152,7 @@ const ThesisSearchPage = () => {
                         name={"language"}
                         value={searchParams.language}
                         onChange={handleInputChange}
+                        autoComplete={"off"}
 
                     >
                         <option value="" disabled>
@@ -156,7 +175,9 @@ const ThesisSearchPage = () => {
                            name="author"
                            value={searchParams.author}
                            onChange={handleInputChange}
-                           placeholder={"Author"}/>
+                           placeholder={"Author"}
+                           autoComplete={"off"}
+                    />
                 </div>
                 <div>
                     <label className={"block mb-2 text-sm font-medium text-gray-900 dark:text-white"}>University Name:</label>
