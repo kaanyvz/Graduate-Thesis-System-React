@@ -37,6 +37,7 @@ const RegisterPage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+
         try {
             const response = await fetch(`${url}/v1/auth/register`,{
                 method: "POST",
